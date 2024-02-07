@@ -24,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     const tags = loadTags(todos, autoCompleteTags);
     setAutoCompleteTags(tags);
-  }, [todos, autoCompleteTags])
+  }, [])
 
   const saveTodo = async (value: string, tags: string[]) => {
     if (value.trim() !== '') {
